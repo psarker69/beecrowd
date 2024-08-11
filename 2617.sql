@@ -1,0 +1,1 @@
+SELECT p.name AS PN, pr.name AS PRN FROM products p JOIN providers pr ON p.id_providers = pr.id WHERE p.id_providers = (SELECT id FROM providers WHERE name = 'Ajax SA')

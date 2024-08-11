@@ -1,0 +1,1 @@
+SELECT p.name AS product, s.name AS supply, c.name AS category FROM products p JOIN providers s ON p.id_providers = s.id JOIN categories c ON p.id_categories = c.id WHERE p.id_providers = (SELECT id FROM providers WHERE name = 'Sansul SA') AND p.id_categories = (SELECT id FROM categories WHERE name = 'Imported')

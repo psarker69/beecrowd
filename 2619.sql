@@ -1,0 +1,1 @@
+SELECT p.name, s.name, p.price FROM categories c JOIN products p ON c.id = p.id_categories JOIN providers s ON p.id_providers = s.id  WHERE p.price > 1000 AND c.name = 'Super Luxury'

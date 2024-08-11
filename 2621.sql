@@ -1,0 +1,1 @@
+SELECT p.name AS product FROM products p, providers s WHERE p.id_providers = s.id AND s.name LIKE 'P%' AND p.amount BETWEEN 10 AND 20
