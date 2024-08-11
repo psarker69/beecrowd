@@ -1,0 +1,1 @@
+SELECT MAX(price) AS highestPrice, MIN(price) AS lowestPrice FROM products

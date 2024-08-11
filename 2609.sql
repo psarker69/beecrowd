@@ -1,0 +1,1 @@
+SELECT categories.name, SUM(products.amount) AS total FROM categories INNER JOIN products ON categories.id = products.id_categories GROUP BY categories.id
